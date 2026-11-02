@@ -4,77 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-      :root {
-        --primary-color: black;
-        --secondary-color: grey;
-        --accent-color: #ff6600;
-        --background-color: #f9f9f9;
-        --font-family: 'Arial', sans-serif;
-      }
-
-      body {
-        font-family: system-ui, -apple-system, sans-serif;
-        background-color: var(--bg-color);
-        color: var(--text-color);
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-    }
-
-    .skip-link {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: var(--primary-color);
-        color: #ffffff;
-        padding: 8px 16px;
-        z-index: 100;
-        text-decoration: none;
-        font-weight: bold;
-        transition: top 0.2s ease-in-out;
-    }
-
-    .skip-link:focus {
-        top: 0;
-        outline: 3px solid #ffbf47; /* High contrast focus ring */
-        outline-offset: 2px;
-    }
-
-    a:focus, button:focus {
-        outline: 2px solid var(--focus-color);
-        outline-offset: 3px;
-    }
-
-    header, main, footer {
-        padding: 1rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        gap: 1.5rem;
-    }
-
-    nav a {
-        color: var(--primary-color);
-        text-decoration: none;
-        font-weight: 600;
-    }
-
-    nav a:hover {
-        text-decoration: underline;
-    }
-
-    p {
-        color: var(--muted-color);
-    }
-
-
-    </style>
 </head>
 <body>
 
@@ -103,7 +32,10 @@
 
     <section id="hero">
       <h2>Capturing Authentic Moments and Stories</h2>
-      <p>Professional portrait, landscape, and lifestyle photography.</p>
+            <p>Professional portrait, landscape, and lifestyle photography.</p>
+      <img src="images/hero.jpg" alt="Portrait sample image of client A">
+      <img src="images/hero2.jpg" alt="Landscape sample for prints">
+      <img src="images/hero3.jpg" alt="Event photo sample image">
       <a href="projects.html">View Projects</a>
       <a href="contact.html">Book a Session</a>
     </section>
@@ -111,6 +43,7 @@
     <section id="about">
       <h2>About the Artist</h2>
       <p>Brief introduction.</p>
+      <img src="images/artist.jpg" alt="portrait of the photographer">
       <a href="about.html">Read Full Bio</a>
     </section>
 
@@ -120,6 +53,7 @@
         <p>"An incredible experience from start to finish. The photos exceeded all expectations!"</p>
         <footer>— Satisfied Client</footer>
       </blockquote>
+      <img src="images/testimonial1.jpg" alt="portrait of happy client">
     </section>
 
   </main>
