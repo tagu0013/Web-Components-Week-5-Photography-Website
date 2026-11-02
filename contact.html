@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 Demo</title>
+
+
+</head>
+<body>
+
+    <table>
+        <caption>Student List </caption>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Program</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Rob</td>
+                <td>123456</td>
+                <td>IMM</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>654321</td>
+                <td>GD</td>
+            </tr>
+
+    </table>
+
+
+
+       <!-- action wiill bring you to where you want to go when you submit the form. so this will go to result.html -->
+
+    <form action="result.html" method="get">
+
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" required placeholder="Enter your first name">
+<!-- label is the description (so first name) input is the box where you put the first name. name is when someone submits the form, the name that is put will be like 'firstname = Rob' 
+ for= and id= should be the same-->
+ <!-- required means you need to fill in the text box, and placeholder puts the gray thing in the box -->
+        </div>
+
+        <div>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="password">
+        </div>
+<!-- there are many different types of input that you can do -->
+
+
+        <div>
+            <label for="q">Questions?</label>
+            <textarea name="question" id="q"></textarea>
+        </div>
+
+        <div>
+            <label for="pgm">Program</label>
+            <select name="program" id="pgm">
+                <option value="imm">Interactive Media Management</option>
+                <option value="gd" selected>Graphic Design</option>
+                     <!-- 'selected' will make it the default selected option whent he page opens -->
+            </select>
+        </div>
+        
+
+<!-- fieldset is a box that you can put things in, legend is the title of the box -->
+        <div>
+            <fieldset>
+                <legend>Wrong 'Would you like a reply?'</legend>
+                <label for="y">Yes</label>
+                <input type="checkbox" id="y" name="yes">
+
+                <label for="n">No</label>
+                <input type="checkbox" id="n" name="no">
+            </fieldset>
+        </div>
+
+<!-- the one above is wrong bec. it's multiple choice, so this one is correct where you can only choose one -->
+        <div>
+            <fieldset>
+                <legend>Correct 'Would you like a reply?'</legend>
+                
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="email" value="yes">
+
+                <label for="no">No</label>
+                <input type="radio" id="no" name="email" value="no">
+            </fieldset>
+        </div>
+
+
+        <div>
+            <button type="submit">Send</button>
+        </div>
+    
+    </form>
+
+
+
+</body>
+</html>
