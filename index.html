@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+  .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #003366;
+        color: #ffffff;
+        padding: 8px;
+        z-index: 100;
+    }
+    .skip-link:focus {
+        top: 0;
+    }
+    </style>
+
 </head>
 <body>
 
@@ -28,7 +44,7 @@
   </header>
 
   <!-- MAIN CONTENT -->
-  <main>
+  <main id="main-content">
 
     <section id="hero">
       <h2>Capturing Authentic Moments and Stories</h2>
