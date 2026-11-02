@@ -28,8 +28,8 @@
 
     <main id="maincontent">
 
-        <section id="contactform">
-            <h2>Contact Us</h2>
+        <section id="inquiry">
+            <h2>Inquire Now</h2>
 
             <form action="result.html" method="post">
 
@@ -43,7 +43,94 @@
                     <input type="email" id="email" name="email" required placeholder="Enter your email address">
                 </div>
 
-                
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+
+                <div>
+                    <label for="subject">Subject</label>
+                    <select name="subject" id="subject">
+                        <option value="general">General Inquiry</option>
+                        <option value="portrait" selected>Portraits</option>
+                        <option value="landscape">Landscapes</option>
+                        <option value="events">Events</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message here..."></textarea>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Preferred Contact Method</legend>
+
+                        <input type="radio" id="pref-email" name="contact_method" value="email" checked>
+                        <label for="pref-email">Email</label>
+
+                        <input type="radio" id="pref-text" name="contact_method" value="text">
+                        <label for="pref-text">Text</label>
+                    </fieldset>
+                </div>
+
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+
             </form>
         </section>
+
+        <section id="rates">
+            <h2>Service Rates</h2>
+
+            <table>
+                <caption>Photography Package Rates</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Package Name</th>
+                        <th scope="col">Starting Rate</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Portrait Package</th>
+                        <td>$250</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Event Package</th>
+                        <td>$600</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Landscape Fine Art Print</th>
+                        <td>$100</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <!-- colspan="2" spans across Package Name and Starting Rate columns -->
+                        <th scope="row" colspan="2">Standard Booking Retainer Required For All Services</th>
+                        <td>$50</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
     </main>
+
+    <footer>
+        <p>&copy; 2026 KT Photography. All rights reserved.</p>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
