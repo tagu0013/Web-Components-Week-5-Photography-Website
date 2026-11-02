@@ -13,7 +13,67 @@
         --font-family: 'Arial', sans-serif;
       }
 
-      
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+
+    .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--primary-color);
+        color: #ffffff;
+        padding: 8px 16px;
+        z-index: 100;
+        text-decoration: none;
+        font-weight: bold;
+        transition: top 0.2s ease-in-out;
+    }
+
+    .skip-link:focus {
+        top: 0;
+        outline: 3px solid #ffbf47; /* High contrast focus ring */
+        outline-offset: 2px;
+    }
+
+    a:focus, button:focus {
+        outline: 2px solid var(--focus-color);
+        outline-offset: 3px;
+    }
+
+    header, main, footer {
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    nav a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    p {
+        color: var(--muted-color);
+    }
+
+
     </style>
 </head>
 <body>
